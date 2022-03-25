@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "jquery": "^3.6.0",
+    "material-ui": "^0.20.2",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15",
+    "semantic-ui-css": "^2.4.1",
+    "three": "^0.137.4"
+  },
+  "nodemonConfig": {
+    "ext": "js,ejs"
+  }
+}
