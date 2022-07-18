@@ -1,8 +1,34 @@
+<style>
+  .sidenav .user-view .circle{
+    height:90px;
+    width:80px;
+  }
+</style>
 <nav>
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper container">    
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <a href="/" class="brand-logo">CRUD</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/add-item">Add Item</a></li>
       </ul>
     </div>
   </nav>
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="/images/universe.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="/images/kiisiimg.jpg"></a>
+      <a href="#name"><span class="white-text name">Kiisi Felix - Developer</span></a>
+      <a href="#email"><span class="white-text email">kiisifelix06@gmail.com</span></a>
+    </div></li>
+    <li><a class="waves-effect" href="/">Home</a></li>
+    <li><a class="waves-effect" href="/add-item">Add Items</a></li>
+  </ul>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elem = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elem);
+    });
+  </script>

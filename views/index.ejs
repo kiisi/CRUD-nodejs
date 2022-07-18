@@ -12,7 +12,7 @@
 
     <%- include('./partials/nav.ejs') %>
 
-  
+    
     
 
   <div class="container" id="itemContainer">
@@ -54,6 +54,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems);
+
   });
 
   edit_form.onsubmit = async function (e){

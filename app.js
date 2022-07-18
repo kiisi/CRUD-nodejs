@@ -35,7 +35,11 @@ app.get('/add-item', (req, res)=>{
 
 app.post('/items', (req, res)=>{
     const item = Item(req.body);
-    item.save().then(result=>{
+    if (!item.name || !item.price){
+        return res.status(400).render("add-item", {error:"Enter a valid data"})
+
+    }
+    item.save().then(()=>{
         res.redirect('/')
     }).catch(err=>console.log(err));
 })
